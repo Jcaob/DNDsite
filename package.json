@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server",
-    "compile":"sass scss/styles.scss css/styles.css -w"
+    "compile": "sass scss/styles.scss css/styles.css -w"
   },
   "author": "",
   "license": "ISC",

@@ -77,3 +77,16 @@
     object-position: 100% center;
   }
 
+  #god-container{
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+  }
+ .carousel{
+  width: 500px;
+ }
+.carousel-item{
+  height: 800px;
+  width: 500px;
+}

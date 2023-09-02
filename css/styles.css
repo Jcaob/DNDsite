@@ -14,14 +14,15 @@ html {
 }
 
 nav {
-  height: 50px;
+  height: 40px;
   width: 100%;
   display: flex;
+  position: sticky;
 }
 
 #logo {
-  margin-left: 25px;
-  height: 50px;
+  display: flex;
+  height: 40px;
   width: 50px;
   background-color: red;
 }
@@ -50,7 +51,7 @@ li:hover {
   background-color: white;
   transition: 0.5s;
 }
-li:hover a {
+li:hover p {
   color: black;
 }
 
@@ -68,12 +69,22 @@ li:hover a {
   background-size: 4000px;
   background-repeat: no-repeat;
   position: relative;
+  display: table;
+  z-index: 30;
+  text-align: center;
 }
 
 .hero-text {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 50px;
+}
+
+#hover-text {
+  user-select: none;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 #about {

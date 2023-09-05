@@ -39,6 +39,14 @@ const handleOnMove = e => {
   }
 }
 
+function openGod(godName) {
+  var i;
+  var x = document.getElementsByClassName("page");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(godName).style.display = "flex";  
+}
 /* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);

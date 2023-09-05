@@ -250,14 +250,74 @@ footer #copyright {
   height: 800px;
   width: 100%;
 }
+#god-container .page {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+}
+#god-container .page .god-img {
+  justify-content: flex-start;
+  height: 700px;
+  width: 500px;
+}
+#god-container .page .god-abt {
+  color: white;
+  margin-left: 100px;
+}
+#god-container .page .god-abt .god-title {
+  font-style: italic;
+}
+#god-container .page .god-abt .god-lore {
+  margin-top: 50px;
+}
 
 .carousel {
   width: 500px;
 }
 
 .carousel-item {
-  height: 800px;
+  height: 700px;
   width: 500px;
+}
+
+#god-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#god-intro .god-button {
+  height: 50px;
+  border-radius: 4px;
+  background-color: lightgreen;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#god-intro .god-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#god-intro .god-button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#god-intro .god-button:hover span {
+  padding-right: 25px;
+}
+#god-intro .god-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

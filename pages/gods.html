@@ -10,33 +10,79 @@
     
 </head>
 <body>
-    <nav>
-            <li><a class="active" href="../index.html">Home</a></li>
-            <li><a href="#god">Gods</a></li>
-            <li><a href="#about">World</a></li>
-            <div id="logo"></div>
-    </nav>
-    <section id="god-container"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="../assets/images/Dwort.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../assets/images/Mur-Kan.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../assets/images/Omen.jpg" alt="Third slide">
-          </div>
+    <nav id="navbar">
+      <a href="../index.html"><li><p>Home</p></li></a>
+      <a href="../pages/world.html"><li><p >World</p></li></a>
+      <a href="#"><li><p >Gods</p></li></a>
+      <!-- <div id="logo"></div> -->
+  </nav>
+
+    <section id="god-intro">
+      <h1 class="hero-text">The Gods</h1>
+      <div class="w3-bar w3-black">
+        <button class="god-button" onclick="openGod('Renith')"> <span>Renith</span></button>
+        <button class="god-button" onclick="openGod('Omen')"><span>Omen</span></button>
+        <button class="god-button" onclick="openGod('Uni')"><span>Uni</span></button>
+        <button class="god-button" onclick="openGod('Ymith')"><span>Ymith</span></button>
+        <button class="god-button" onclick="openGod('Dwort')"><span>Dwort</span></button>
+        <button class="god-button" onclick="openGod('Mur-Kan')"><span>Mur-Kan</span></button>
+      </div>
+    </section>
+
+    <section id="god-container">
+      <div id="Renith" class="page">
+        <img class="god-img" src="../assets/images/Renith.jpg">
+        <div class="god-abt">
+          <h2>Renith</h2>
+          <p class="god-title">God of Light</p>
+          <p class="god-lore">Work in Progess</p>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-    </div>
+      </div>
+      
+      <div id="Omen" class="page" style="display:none">
+        <img class="god-img" src="../assets/images/Omen.jpg">
+        <div class="god-abt">
+          <h2>Omen</h2>
+          <p class="god-title">God of Darkness</p>
+          <p class="god-lore">Work in Progess</p>
+        </div>
+      </div>
+      
+      <div id="Uni" class="page" style="display:none">
+        <img class="god-img" src="../assets/images/Uni.jpg">
+        <div class="god-abt">
+          <h2>Uni</h2>
+          <p class="god-title">God of Time and Order</p>
+          <p class="god-lore">Work in Progess</p>
+        </div>
+      </div>
+
+      <div id="Ymith" class="page" style="display:none">
+        <img class="god-img" src="../assets/images/Ymdis.jpg">
+        <div class="god-abt">
+          <h2>Ymith</h2>
+          <p class="god-title">God of Chaos</p>
+          <p class="god-lore">Work in Progess</p>
+        </div>
+      </div>
+      
+      <div id="Dwort" class="page" style="display:none">
+        <img class="god-img" src="../assets/images/Dwort.jpg">
+        <div class="god-abt">
+          <h2>Dwort</h2>
+          <p class="god-title">God of The Forge</p>
+          <p class="god-lore">Work in Progess</p>
+        </div>
+      </div>
+      
+      <div id="Mur-Kan" class="page" style="display:none">
+        <img class="god-img" src="../assets/images/Mur-Kan.jpg">
+        <div class="god-abt">
+          <h2>Mur-Kan</h2>
+          <p class="god-title">God of the Sea</p>
+          <p class="god-lore">Work in Progess</p>
+        </div>
+      </div>
     </section>
     
     
@@ -45,9 +91,6 @@
         <p id="copyright">© 2023 Guy Productions
         </p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="app/app.js"></script>
+    <script src="../app/app.js"></script>
 </body>
 </html>

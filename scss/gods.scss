@@ -82,11 +82,87 @@
     justify-content: center;
     height: 800px;
     width: 100%;
+
+    
+    .page{
+      display: flex;
+      width: 100%;
+      margin-top: 50px;
+     
+      .god-img{
+        justify-content: flex-start;
+        height: 700px;
+        width: 500px;
+      }
+
+      .god-abt{
+        color: white;
+        margin-left: 100px;
+
+        .god-title{
+          font-style: italic;
+        }
+
+        .god-lore{
+          margin-top: 50px;
+        }
+      }
+    }
   }
  .carousel{
   width: 500px;
  }
 .carousel-item{
-  height: 800px;
+  height: 700px;
   width: 500px;
 }
+
+#god-intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  .god-button{
+  // display: inline-block;
+            height: 50px;
+            border-radius: 4px;
+            background-color: lightgreen;
+            border: none;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            
+          }
+          
+          .god-button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .god-button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+          
+          .god-button:hover span {
+            padding-right: 25px;
+          }
+          
+          .god-button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+}
+
+
+        

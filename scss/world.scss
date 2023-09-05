@@ -4,7 +4,10 @@
     align-items: center;
     justify-content: center;
     
-    .world-button{
+    .world-button-container{
+        margin-top: 20px;
+
+        .world-button{
     // display: inline-block;
               height: 50px;
               border-radius: 4px;
@@ -43,6 +46,29 @@
               opacity: 1;
               right: 0;
             }
+    }
+    
+
+    #world-start{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        #world-img{
+            margin-top: 10px;
+            height: 600px;
+            width: 600px;
+        }
+        .world-des{
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    }
         
 }
+
 

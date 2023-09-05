@@ -260,6 +260,14 @@ footer #copyright {
   height: 700px;
   width: 500px;
 }
+#god-container .page .world-img {
+  height: 700px;
+  width: 800px;
+}
+#god-container .page .world-img2 {
+  height: 700px;
+  width: 600px;
+}
 #god-container .page .god-abt {
   color: white;
   margin-left: 100px;
@@ -326,7 +334,10 @@ footer #copyright {
   align-items: center;
   justify-content: center;
 }
-#world-intro .world-button {
+#world-intro .world-button-container {
+  margin-top: 20px;
+}
+#world-intro .world-button-container .world-button {
   height: 50px;
   border-radius: 4px;
   background-color: white;
@@ -338,13 +349,13 @@ footer #copyright {
   transition: all 0.5s;
   cursor: pointer;
 }
-#world-intro .world-button span {
+#world-intro .world-button-container .world-button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-#world-intro .world-button span:after {
+#world-intro .world-button-container .world-button span:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -352,12 +363,30 @@ footer #copyright {
   right: -20px;
   transition: 0.5s;
 }
-#world-intro .world-button:hover span {
+#world-intro .world-button-container .world-button:hover span {
   padding-right: 25px;
 }
-#world-intro .world-button:hover span:after {
+#world-intro .world-button-container .world-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+#world-intro #world-start {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#world-intro #world-start #world-img {
+  margin-top: 10px;
+  height: 600px;
+  width: 600px;
+}
+#world-intro #world-start .world-des {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
